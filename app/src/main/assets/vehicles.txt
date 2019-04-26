@@ -1,0 +1,5 @@
+C,Toyota,Corolla,2012,12000,corrola
+C,Honda,Civic,2008,14500,civic
+B,Alan,city bike,350,alanb
+B,Arios,Montain bike,700,ariosb
+B,Canyon,VTT,550,canyonb
