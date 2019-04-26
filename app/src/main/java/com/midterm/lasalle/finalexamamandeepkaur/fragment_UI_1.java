@@ -19,21 +19,21 @@ public class fragment_UI_1  extends android.app.Fragment {
         return inflater.inflate(R.layout.fragment_ui_1,container,false);
     }
 
-//    @Override
-//    public void onActivityCreated(Bundle savedInstanceState)
-//    {
-//        super.onActivityCreated(savedInstanceState);
-//        Vehicle vehicle =(Vehicle) getArguments().getSerializable("Vehicle");
-//        Car car=(Car)getArguments().getSerializable("Car");
-//
-//        TextView textViewBrand =getActivity().findViewById(R.id.textViewBrand);
-//        textViewBrand.setText(vehicle.getBrand());
-//
-//        TextView textViewModel =getActivity().findViewById(R.id.textViewModel);
-//        textViewModel.setText(car.getModel());
-//
-//        TextView textViewYear =getActivity().findViewById(R.id.textViewYear);
-//        textViewYear.setText(String.valueOf(car.getYear()));
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState)
+    {
+        super.onActivityCreated(savedInstanceState);
+        Vehicle vehicle =(Vehicle) getArguments().getSerializable("Vehicle");
+        Car car=(Car)getArguments().getSerializable("Car");
+
+        TextView textViewBrand =getActivity().findViewById(R.id.textViewBrand);
+        textViewBrand.setText(vehicle.getBrand());
+
+        TextView textViewModel =getActivity().findViewById(R.id.textViewModel);
+        textViewModel.setText(car.getModel());
+
+        TextView textViewYear =getActivity().findViewById(R.id.textViewYear);
+        textViewYear.setText(String.valueOf(car.getYear()));
 
         TextView textViewPrice=getActivity().findViewById(R.id.textViewPrice);
         textViewPrice.setText(String.valueOf(vehicle.getPrice()));
